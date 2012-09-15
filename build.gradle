@@ -1,0 +1,24 @@
+description = 'Human Task Gradle Example'
+group = 'net.spantree.jbm.humanTask'
+
+repositories {
+	mavenCentral()
+}
+
+apply plugin: 'java'
+
+dependencies {
+	// Drools dependencies
+	compile "org.drools:drools-core:${droolsVersion}"
+	
+	// jBPM dependencies
+	compile "org.jbpm:jbpm-bpmn2:${jbpmVersion}"
+	compile "org.jbpm:jbpm-bam:${jbpmVersion}"
+	compile "org.jbpm:jbpm-flow:${jbpmVersion}"
+	compile "org.jbpm:jbpm-human-task-core:${jbpmVersion}"
+	compile "org.jbpm:jbpm-human-task-hornetq:${jbpmVersion}"
+	compile "org.jbpm:jbpm-human-task-mina:${jbpmVersion}"
+	compile "org.jbpm:jbpm-human-task-jms:${jbpmVersion}"
+	compile "org.jbpm:jbpm-test:${jbpmVersion}"
+	compile "org.jbpm:jbpm-persistence-jpa:${jbpmVersion}"
+}
